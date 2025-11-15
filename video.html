@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Video - JoeVen AI/ML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="assets/logo/logo.png">
+        JoeVen AI/ML
+    </div>
+    <nav><a href="index.html">Home</a></nav>
+</header>
+
+<div class="video-container">
+    <h2 id="title"></h2>
+
+    <iframe id="ytplayer" width="100%" height="400"
+        frameborder="0" allowfullscreen>
+    </iframe>
+
+    <h3>Notes</h3>
+    <p id="notes"></p>
+</div>
+
+<script src="videos.json"></script>
+<script>
+    const url = new URL(window.location.href);
+    const id = url.searchParams.get("id");
+
+    const video = VIDEOS.find(v => v.id === id);
+
+    if (video) {
+        document.title = video.title + " - JoeVen";
+        document.getElementById("title").innerText = video.title;
+        document.getElementById("notes").innerHTML = video.notes;
+        document.getElementById("ytplayer").src = 
+            "https://www.youtube.com/embed/" + video.youtube;
+    } else {
+        document.getElementById("title").innerText = "Video Not Found";
+    }
+</script>
+
+</body>
+</html>
