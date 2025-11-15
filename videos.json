@@ -1,0 +1,16 @@
+{
+    "VIDEOS": [
+        {
+            "id": "ml-intro",
+            "title": "Machine Learning Introduction",
+            "youtube": "GwIo3gDZCVQ",
+            "notes": "• ML overview<br>• Types of ML<br>• Real-world examples"
+        },
+        {
+            "id": "linear-regression",
+            "title": "Linear Regression Explained",
+            "youtube": "v64KOxKVLVg",
+            "notes": "• Prediction<br>• Cost function<br>• Gradient Descent"
+        }
+    ]
+}
