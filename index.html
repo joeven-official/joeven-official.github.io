@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>JoeVen AI/ML</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,45 +10,17 @@
 
 <header>
     <div class="logo">
-        <img src="assets/logo/logo.png" alt="JoeVen Logo">
+        <img src="assets/logo/logo.png">
         JoeVen AI/ML
     </div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="video1.html">ML Intro</a>
-        <a href="video2.html">Linear Regression</a>
-    </nav>
 </header>
 
-<section class="hero">
-    <h1>JoeVen AI & Machine Learning</h1>
-    <p>Learn AI/ML with videos, explanations, and simple content.</p>
-</section>
+<h1 class="title">AI/ML Video Library</h1>
 
-<section class="videos">
-    <h2>Featured Videos</h2>
+<div id="video-list" class="videos"></div>
 
-    <div class="video-card">
-        <iframe width="100%" height="250"
-        src="https://www.youtube.com/embed/GwIo3gDZCVQ"
-        frameborder="0" allowfullscreen></iframe>
-        <h3>Machine Learning Crash Course</h3>
-        <a class="btn" href="video1.html">View Content</a>
-    </div>
-
-    <div class="video-card">
-        <iframe width="100%" height="250"
-        src="https://www.youtube.com/embed/v64KOxKVLVg"
-        frameborder="0" allowfullscreen></iframe>
-        <h3>Linear Regression Explained</h3>
-        <a class="btn" href="video2.html">View Content</a>
-    </div>
-
-</section>
-
-<footer>
-    © 2025 JoeVen — AI/ML Tutorials  
-</footer>
+<script src="videos.json"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
